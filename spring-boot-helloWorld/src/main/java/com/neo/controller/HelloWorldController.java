@@ -7,7 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
 	
     @RequestMapping("/hello")
-    public String index() {
+    public String hello() {
         return "Hello World";
+    }
+
+    @RequestMapping("/helloBoot")
+    public String helloBoot() {
+        return "Hello Spring Boot 2.6.2";
     }
 }
